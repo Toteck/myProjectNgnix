@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configuração de servidores</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="userForm" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label for="username" class="form-label">Nome de Usuário</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="form-input"
+            required
+          />
+          <p class="error-message" id="usernameError">
+            O campo Nome de Usuário é obrigatório.
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="form-label">Senha</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-input"
+            required
+          />
+          <p class="error-message" id="passwordError">
+            O campo Senha é obrigatório.
+          </p>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Enviar" class="form-button" />
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
